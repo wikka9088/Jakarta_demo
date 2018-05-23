@@ -2,6 +2,7 @@
     <wb-module deploy-name="First_web_application">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/com.demo.dao.mapper"/>
         <property name="context-root" value="First_web_application"/>
         <property name="java-output-path" value="/First_web_application/build/classes"/>
     </wb-module>
