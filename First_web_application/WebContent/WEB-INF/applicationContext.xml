@@ -20,4 +20,12 @@
 		<property name="mapperInterface" value="com.demo.dao.UserDAOInterface" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
+	
+	<bean id="userService" class="com.demo.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userMapper" />
+	</bean>
+	
+	<bean id="userAction" class="com.demo.web.UserAction" scope="prototype">
+		<property name="userService" ref="userService"/>
+	</bean>
  </beans>
